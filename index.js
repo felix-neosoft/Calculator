@@ -1,4 +1,6 @@
 let screen = document.getElementById('screen');
+var modal = document.getElementById('modal_container');
+var container = document.getElementById('container_cal')
 buttons =document.querySelectorAll('button');                    /* Add all buttons as array in 'buttons' variable */
 let screenValue = '';                                            /* Variable to perform all operations */
 let historyData =[];
@@ -14,6 +16,14 @@ for(item of buttons){                                            /* Fetch the in
             while(x.hasChildNodes()){
                 x.removeChild(x.firstChild);
             }
+        }
+        else if(buttonText == 'Logs'){
+            modal.style.display='flex';
+            container.style.opacity=0.3;
+        }
+        else if(buttonText == 'Close'){
+            modal.style.display='none';
+            container.style.opacity=1;
         }
         else if(buttonText == 'back'){
             screenValue = screenValue.slice(0,-1);
@@ -34,9 +44,9 @@ for(item of buttons){                                            /* Fetch the in
             screen.value = screenValue;
         }
         else if(buttonText=='='){
-            historyData.push({"expression":screenValue,"result":eval(screenValue)});
-            screen.value = eval(screenValue);
-            screenValue = eval(screenValue);
+            historyData.push({"expression":screenValue,"result":eval(screenValue).toFixed(2)});
+            screen.value = eval(screenValue).toFixed(2);
+            screenValue = eval(screenValue).toFixed(2);
             h_logs(historyData[count].expression,historyData[count].result);
             count+=1;
         }
@@ -53,7 +63,7 @@ function h_logs(exp,result){                                                   /
     var td2 = document.createElement('td');
     var table = document.getElementById('log_table');
     table.appendChild(tr);
-    td1.innerText = exp +" : ";
+    td1.innerText = exp + " : ";
     tr.appendChild(td1);
     td2.innerText = result;
     tr.appendChild(td2);

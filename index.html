@@ -16,10 +16,14 @@
 </head>
 <body>
     <div class="content">
-        <div class="container">
+        <div id="container_cal" class="container">
             <h1>Calculator</h1>
-            <input type="text" name="screen" id="screen">
+            
             <table id="cal_table">
+                <tr>
+                    <td colspan="3"><input type="text" name="screen" id="screen"></td>
+                    <td><button>Logs</button></td>
+                </tr>
                 <tr>
                     <td><button>7</button></td>
                     <td><button>8</button></td>
@@ -36,11 +40,11 @@
                     <td><button>3</button></td>
                     <td><button>2</button></td>
                     <td><button>1</button></td>
-                    <td><button>-</button></td>
+                    <td><button>/</button></td>
                 </tr>
                 <tr>
                     <td><button>0</button></td>
-                    <td><button>/</button></td>
+                    <td><button>-</button></td>
                     <td><button>+</button></td>
                     <td><button>pow</button></td>
                 </tr>
@@ -52,10 +56,12 @@
             </table>
 
         </div>
-        <div class="history">
-            <h2>Logs</h2>
-            <table id="log_table"></table>
-            
+        <div id="modal_container" class="modal-container">
+            <div class="modal">
+                <h2>Logs</h2>
+                <table class="log-table" id="log_table"></table>
+                <button id="close">Close</button>
+            </div>
         </div>
     </div>
 </body>
