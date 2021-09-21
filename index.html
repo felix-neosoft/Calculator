@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Calculator">
+    <meta name="description" content="Calculator that performs basic mathematical operations.">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h1>Calculator</h1>
+            <input type="text" name="screen" id="screen">
+            <table id="cal_table">
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>C</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                <tr>
+                    <td><button>3</button></td>
+                    <td><button>2</button></td>
+                    <td><button>1</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>/</button></td>
+                    <td><button>+</button></td>
+                    <td><button>pow</button></td>
+                </tr>
+                <tr>
+                    <td id="clear_logs" colspan="2"><button>Clear Logs</button></td>
+                    <td><button>back</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="history">
+            <h2>Logs</h2>
+            <table id="log_table"></table>
+            
+        </div>
+    </div>
+</body>
+    <!-- JavaScript links -->
+    <script src="index.js"></script>
+</html>

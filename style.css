@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+    width: 40%;
+    display:inline-block;
+}
+.history{
+    width: 40%;
+    display: inline-block;
+    position:absolute;
+    margin-left: 100px;
+}
+#cal_table{
+    margin: auto;
+}
+
+input{
+    font-size: 34px;
+    margin-bottom: 30px;
+    width: auto;
+    height: 60px;
+}
+button{
+    font-size: 23px;
+    background-color: aqua;
+     width: 101px;
+     height: 60px;
+}
+#clear_logs button{
+    width: 210px;
+}
