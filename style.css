@@ -9,9 +9,9 @@ body{
     border-radius: 350px;
     color: #22577A;
     text-align: center;
-    padding: 50px;
+    padding: 0px 50px 50px;
     width: 40%;
-    margin: 0px auto 0px;
+    margin: 30px auto 0px;
     
     
 }
@@ -28,6 +28,7 @@ body{
     height: 60px;
     background-color: #22577A;
     color: #80ED99;
+    padding-left: 10px;
 }
 button{
     font-size: 23px;
@@ -88,3 +89,12 @@ button:hover{
     text-align: center;
     
 }
+
+
+h6{
+    font-size: 20px;
+    text-align: center;
+    color: #57CC99;
+}
+
+
