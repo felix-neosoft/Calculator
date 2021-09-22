@@ -9,7 +9,7 @@ body{
     border-radius: 350px;
     color: #22577A;
     text-align: center;
-    padding: 0px 50px 50px;
+    padding: 0px 70px 50px;
     width: 40%;
     margin: 30px auto 0px;
     
@@ -63,7 +63,7 @@ button:hover{
     justify-content: center;
     position: fixed;
     top: 0;
-    left: 28%;
+    left: 27%;
     width: 100vh;
     height: 100vh;
     opacity: 1;
