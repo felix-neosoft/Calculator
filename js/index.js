@@ -1,6 +1,6 @@
 // Variables to store information of DOM elements 
-let screen = document.getElementById('screen');
-let modal = document.getElementById('modal_container');
+let screen = document.getElementById('screen_cal');
+let modal = document.getElementById('modal_container_log');
 let container = document.getElementById('container_cal')
 let buttons =document.querySelectorAll('button');                    /* Add all buttons as array in 'buttons' variable */
 let screenValue = '';                                            /* Variable to perform all operations */

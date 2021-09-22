@@ -3,7 +3,7 @@ body{
     box-sizing: border-box;
 
 }
-.container{
+.container-c{
     border: 5px solid #38A3A5;
     background-color: #80ED99;
     border-radius: 350px;
@@ -15,14 +15,14 @@ body{
     
     
 }
-.container #screen{
+.container-c #screen_cal{
     border-radius: 50px;
 }
 #cal_table{
     margin: auto;
 }
 
-#screen{
+#screen_cal{
     font-size: 34px;
     width: 304px;
     height: 60px;
@@ -30,7 +30,7 @@ body{
     color: #80ED99;
     padding-left: 10px;
 }
-button{
+.container-c button{
     font-size: 23px;
     background-color: #57CC99;
      width: 101px;
@@ -56,7 +56,7 @@ button:hover{
     color: #80ED99;
 }
 
-.modal-container{
+.modal-container-log{
     
     display: none;
     align-items: center;
@@ -68,13 +68,13 @@ button:hover{
     height: 100vh;
     opacity: 1;
 }
-.modal{
+.modal-log{
     border-radius: 30px;
     background-color: #22577A;
     width: 90%;
     text-align: center;
 }
-.modal h2{
+.modal-log h2{
     color: #80ED99;
 }
 

@@ -8,19 +8,19 @@
     <meta name="author" content="Felix Mathew">
 
     <!-- CSS links -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="calculator.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/calculator.png">
     
     <title>Calculator</title>
 </head>
 <body>
     <div class="content">
-        <div id="container_cal" class="container">
+        <div id="container_cal" class="container-c">
             <h1>Calculator</h1>
             
             <table id="cal_table">
                 <tr>
-                    <td colspan="3"><input type="text" name="screen" id="screen"></td>
+                    <td colspan="3"><input type="text" name="screen-cal" id="screen_cal"></td>
                     <td><button>Logs</button></td>
                 </tr>
                 <tr>
@@ -55,8 +55,8 @@
             </table>
 
         </div>
-        <div id="modal_container" class="modal-container">
-            <div class="modal">
+        <div id="modal_container_log" class="modal-container-log">
+            <div class="modal-log">
                 <h2>Logs</h2>
                 <table class="log-table" id="log_table"></table>
                 <button id="close">Close</button>
@@ -66,5 +66,5 @@
     <h6>&copy; 2021. Created By Felix Mathew</h6>
 </body>
     <!-- JavaScript links -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </html>
